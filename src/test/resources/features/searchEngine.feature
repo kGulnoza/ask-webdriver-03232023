@@ -3,7 +3,7 @@
 
 @predefined
 Feature: Search Engine scenarios
-  @predefined2
+  @predefined2 @Regression
 
  Scenario: Search Engine for gibiru.com/
     
@@ -98,6 +98,7 @@ Feature: Search Engine scenarios
     And I should see page title as "Form is not secure"
     And I click on element using JavaScript with xpath "//button[@id='proceed-button']"
     Then I switch to iframe with xpath "//body/div[@id='results_009420061493499222400:e8sof1xaq-u']/iframe[1]"
+    Then element with xpath "//*[contains(text(),'flower')]" should contain text "flower"
     And I wait for 2 sec
 
   @predefined10
