@@ -3,7 +3,7 @@
 
 @predefined
 Feature: Search Engine scenarios
-  @predefined2 @Regression
+  @predefined2 @Regression @smoke
 
  Scenario: Search Engine for gibiru.com/
     
