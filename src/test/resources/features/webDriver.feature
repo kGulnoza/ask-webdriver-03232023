@@ -7,4 +7,5 @@
       #Then I should see page title as "Google"
       Given GK navigate to "ask-int.portnov.com"
       Then GK get page information
+      And I wait for 2 sec
       And GK maximize the window
